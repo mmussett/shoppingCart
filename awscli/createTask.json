@@ -13,7 +13,7 @@
           "awslogs-stream-prefix": "ecs"
         }
       },
-      "cpu": 1024,
+      "cpu": 4,
       "memoryReservation": 2048,
       "image": "048063763713.dkr.ecr.eu-west-1.amazonaws.com/shoppingcart:latest",
       "essential": true,
