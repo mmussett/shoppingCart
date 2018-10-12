@@ -31,7 +31,7 @@ pipeline
 		{
 			steps
 			{
-				sh 'aws/dockerPush.sh'
+				sh 'jenkins/dockerPush.sh'
 			}
 		}
 	}
