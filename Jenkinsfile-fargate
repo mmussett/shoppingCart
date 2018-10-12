@@ -41,5 +41,12 @@ pipeline
 				sh 'awscli/createCluster.sh'
 			}
 		}
+		stage ('Create Fargate Task Stage')
+		{
+			steps
+			{
+				sh 'awscli/createTask.sh'
+			}
+		}
 	}
 }
