@@ -31,6 +31,14 @@ pipeline
 		{
 			steps
 			{
+				sh 'docker stop shoppingcart'
+				sh 'docker rm shoppingcart'
+			}
+		}
+		stage ('Docker Login Stage')
+		{
+			steps
+			{
 				sh 'awscli/loginDockerAWS.sh'
 			}
 		}
