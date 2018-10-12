@@ -1,0 +1,17 @@
+Manifest-Version: 1.0.0.201810120821
+Bundle-SymbolicName: tibco.bwce.ShoppingCart.module
+Bundle-ManifestVersion: 2
+TIBCO-BW-Edition: bwcf
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.sharedresource.model; filter:="(name=bw.httpconnector)",com.tib
+ co.bw.binding.model; filter:="(name=bw.rest)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 2.4.0 V63 2018-08-08
+Bundle-Name: Tibco Bwce ShoppingCart Module
+Bundle-Version: 1.0.0.201810120821
+Bundle-ClassPath: .
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+
