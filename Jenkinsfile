@@ -13,11 +13,18 @@ pipeline
     }
 	stages
 	{
-		stage ('Build Stage')
+		stage ('EAR Build Stage')
 		{
 			steps
 			{
 				sh 'mvn -f tibco.bwce.ShoppingCart.parent/pom.xml clean package initialize'
+			}
+		}
+		stage ('Docker Build Stage')
+		{
+			steps
+			{
+				sh 'docker build -t shoppingcart .'
 			}
 		}
 		stage ('Docker Login Stage')
