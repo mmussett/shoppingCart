@@ -27,7 +27,7 @@ pipeline
 				sh 'docker build -t shoppingcart .'
 			}
 		}
-		stage ('Docker Login Stage')
+		stage ('Docker Container Cleanup Stage')
 		{
 			steps
 			{
