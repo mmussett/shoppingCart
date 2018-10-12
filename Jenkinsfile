@@ -27,24 +27,19 @@ pipeline
 				sh 'docker build -t shoppingcart .'
 			}
 		}
-		stage ('Docker Container Cleanup Stage')
+		stage ('Docker Cleanup Stage')
 		{
 			steps
 			{
-				sh '# On the very first invocation, this will not exist and will fail, so prevent that.
-CONTAINER_ID=$(docker ps -a -q -f name=shoppingcart)
-if [ ! -z $CONTAINER_ID ]
-then 
-    docker stop $CONTAINER_ID
-    docker rm -f $CONTAINER_ID
-fi'
+				sh 'jenkins/dockerContainerStop.sh'
+				sh 'jenkins/dockerRemoveImage.sh'
 			}
 		}
-		stage ('Docker Login Stage')
+		stage ('Docker Container Start')
 		{
 			steps
 			{
-				sh 'awscli/loginDockerAWS.sh'
+				sh 'jenkins/dockerRunContainer.sh'
 			}
 		}
 	}
