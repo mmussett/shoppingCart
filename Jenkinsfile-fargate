@@ -27,19 +27,11 @@ pipeline
 				sh 'docker build -t shoppingcart .'
 			}
 		}
-		stage ('Docker Cleanup Stage')
+		stage ('Docker Push Stage')
 		{
 			steps
 			{
-				sh 'jenkins/dockerContainerStop.sh'
-				sh 'jenkins/dockerRemoveImage.sh'
-			}
-		}
-		stage ('Docker Container Start')
-		{
-			steps
-			{
-				sh 'jenkins/dockerRunContainer.sh'
+				sh 'aws/dockerPush.sh'
 			}
 		}
 	}
