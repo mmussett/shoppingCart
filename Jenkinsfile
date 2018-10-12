@@ -3,7 +3,7 @@ pipeline
 {
 	agent any
     tools { 
-        maven 'Maven-3.5.4'  
+        maven 'Maven-3.3.9'  
     }
     environment {
       PATH = "/usr/local/bin:/usr/bin:/bin:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin:/usr/share/maven/bin"
