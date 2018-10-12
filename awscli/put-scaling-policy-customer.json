@@ -1,12 +1,14 @@
 {
     "PolicyName": "ecs-scaling-policy",
     "ServiceNamespace": "ecs",
-    "ResourceId": "service/testcluster/AlertHubFargate-Service",
+    "ResourceId": "service/bwce-cluster/ShoppingCart",
     "ScalableDimension": "ecs:service:DesiredCount",
     "PolicyType": "TargetTrackingScaling",
     "TargetTrackingScalingPolicyConfiguration": {
-        "TargetValue": 35,        "PredefinedMetricSpecification": {
-            "PredefinedMetricType": "ECSServiceAverageCPUUtilization"        },
+        "TargetValue": 35,        
+        "PredefinedMetricSpecification": {
+            "PredefinedMetricType": "ECSServiceAverageCPUUtilization"        
+        },
         "ScaleOutCooldown": 30,
         "ScaleInCooldown": 30,
         "DisableScaleIn": false
