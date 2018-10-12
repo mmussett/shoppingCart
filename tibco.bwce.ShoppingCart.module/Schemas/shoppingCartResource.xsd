@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1539327632537"
+	elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1539327632537">
+
+	<element name="cartItem" type="tns:cartItemType" />
+	<complexType name="cartItemType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="product_id" type="string" />
+			<element maxOccurs="1" minOccurs="0" name="unit_price" type="double" />
+			<element maxOccurs="1" minOccurs="0" name="qty" type="integer" />
+			<element maxOccurs="1" minOccurs="0" name="line_price" type="double" />
+		</sequence>
+	</complexType>
+
+	<complexType name="shoppingCartType">
+		<sequence>
+			<element maxOccurs="1" minOccurs="0" name="cart">
+				<complexType>
+					<sequence>
+						<element maxOccurs="1" minOccurs="0" name="id" type="string" />
+						<element maxOccurs="1" minOccurs="0" name="qty" type="integer" />
+						<element maxOccurs="1" minOccurs="0" name="total" type="double" />
+						<element maxOccurs="1" minOccurs="1" name="content">
+							<complexType>
+								<sequence>
+									<element maxOccurs="1" minOccurs="0" ref="tns:cartItem"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+	<element name="shoppingCart" type="tns:shoppingCartType" />
+</schema>

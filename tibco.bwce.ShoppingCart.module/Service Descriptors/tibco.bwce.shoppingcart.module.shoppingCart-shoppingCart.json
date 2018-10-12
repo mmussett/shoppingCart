@@ -1,0 +1,170 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Shopping Cart Management",
+    "description" : "Shopping Cart Management"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/shoppingcart/{id}" : {
+      "post" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "post-shoppingcart",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a shoppingCart to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/shoppingCart"
+            }
+          }
+        }
+      },
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-shoppingcart",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a shoppingCart to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/shoppingCart"
+            }
+          }
+        }
+      },
+      "delete" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "delete-shoppingcart",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      },
+      "patch" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "patch-shoppingcart",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/shoppingCart"
+          },
+          "required" : true
+        }, {
+          "name" : "id",
+          "in" : "path",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a shoppingCart to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/shoppingCart"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "shoppingCart" : {
+      "type" : "object",
+      "properties" : {
+        "cart" : {
+          "$ref" : "#/definitions/cart"
+        }
+      }
+    },
+    "cartItem" : {
+      "type" : "object",
+      "properties" : {
+        "product_id" : {
+          "type" : "string"
+        },
+        "unit_price" : {
+          "type" : "number"
+        },
+        "qty" : {
+          "type" : "integer"
+        },
+        "line_price" : {
+          "type" : "number"
+        }
+      }
+    },
+    "cart" : {
+      "type" : "object",
+      "required" : [ "content" ],
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "qty" : {
+          "type" : "integer"
+        },
+        "total" : {
+          "type" : "number"
+        },
+        "content" : {
+          "$ref" : "#/definitions/content"
+        }
+      }
+    },
+    "content" : {
+      "type" : "object",
+      "properties" : {
+        "cartItem" : {
+          "$ref" : "#/definitions/cartItem"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_l6UkIM3kEeiO86h7HiAGtA" name="tibco.bwce.shoppingcart.module.shoppingCart" type="httpconnector:HttpConnectorConfiguration">
+  <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_l6XncM3kEeiO86h7HiAGtA">
+    <substitutionBindings xmi:id="_l6ZcoM3kEeiO86h7HiAGtA" template="host" propName="BW.HOST.NAME"/>
+    <substitutionBindings xmi:id="_ywBOwM3lEeiO86h7HiAGtA" template="port" propName="BW.CLOUD.PORT"/>
+  </jndi:configuration>
+</jndi:namedResource>

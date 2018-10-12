@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="__lEggM3jEeiO86h7HiAGtA" targetNamespace="http://tns.tibco.com/bw/composite/tibco.bwce.ShoppingCart.module" name="tibco.bwce.ShoppingCart.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_l55GUM3kEeiO86h7HiAGtA" name="shoppingcart" promote="ComponentshoppingCart/shoppingcart">
+    <sca:interface.wsdl xmi:id="_l6BCIM3kEeiO86h7HiAGtA" interface="http://xmlns.example.com/20181012080351PLT#wsdl.interface(shoppingcart)" scaext:wsdlLocation="../Processes/tibco/bwce/shoppingcart/module/shoppingCart.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_l6KzIM3kEeiO86h7HiAGtA" name="RestService" path="/shoppingcart/{id}" docBasePath="http://localhost:7777/tibco.bwce.ShoppingCart.module" docResourcePath="shoppingCart" basePath="/" connector="tibco.bwce.shoppingcart.module.shoppingCart" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/tibco.bwce.shoppingcart.module.shoppingCart-shoppingCart.json">
+      <operation xmi:id="_l6PEkM3kEeiO86h7HiAGtA" operationName="post" nickname="post-shoppingcart" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_l6PEkc3kEeiO86h7HiAGtA" operationName="get" nickname="get-shoppingcart" httpMethod="GET" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_l6PEks3kEeiO86h7HiAGtA" operationName="delete" nickname="delete-shoppingcart" httpMethod="DELETE" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_l6PEk83kEeiO86h7HiAGtA" operationName="patch" nickname="patch-shoppingcart" httpMethod="PATCH" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_l6-rcM3kEeiO86h7HiAGtA">
+        <parameterMapping xmi:id="_l6_SgM3kEeiO86h7HiAGtA" parameterName="id" parameterType="Path" required="true"/>
+      </parameters>
+      <advancedConfig xmi:id="_l6NPYM3kEeiO86h7HiAGtA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_l6PElM3kEeiO86h7HiAGtA" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_AzZ74M3kEeiO86h7HiAGtA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Azjs4M3kEeiO86h7HiAGtA" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AzmJIM3kEeiO86h7HiAGtA" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AzpMcM3kEeiO86h7HiAGtA" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AzsPwM3kEeiO86h7HiAGtA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AzvTEM3kEeiO86h7HiAGtA" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_AzyWYM3kEeiO86h7HiAGtA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_l5s5EM3kEeiO86h7HiAGtA" name="ComponentshoppingCart" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_l5s5Ec3kEeiO86h7HiAGtA" processName="tibco.bwce.shoppingcart.module.shoppingCart"/>
+    <sca:service xmi:id="_l50N0M3kEeiO86h7HiAGtA" name="shoppingcart">
+      <sca:interface.wsdl xmi:id="_l52DAM3kEeiO86h7HiAGtA" interface="http://xmlns.example.com/20181012080351PLT#wsdl.interface(shoppingcart)" scaext:wsdlLocation="../Processes/tibco/bwce/shoppingcart/module/shoppingCart.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

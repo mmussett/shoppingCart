@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/tibco.bwce.ShoppingCart.module/Service Descriptors/tibco.bwce.shoppingcart.module.shoppingCart-shoppingCart.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1539327632537"
+    },
+    {
+        "jsonSchemaLocation": "/tibco.bwce.ShoppingCart.module/Service Descriptors/tibco.bwce.shoppingcart.module.shoppingCart-shoppingCart.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://xmlns.example.com/shoppingCart/parameters"
+    }
+]}
