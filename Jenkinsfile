@@ -17,7 +17,7 @@ pipeline
 		{
 			steps
 			{
-				sh 'mvn -f tibco.bwce.ShoppingCart.parent/pom.xml clean package initialize docker:build'
+				sh 'mvn -f tibco.bwce.ShoppingCart.parent/pom.xml clean package initialize'
 			}
 		}
 		stage ('Docker Login Stage')
