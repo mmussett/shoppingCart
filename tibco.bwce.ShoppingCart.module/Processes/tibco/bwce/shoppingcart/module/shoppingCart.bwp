@@ -500,8 +500,6 @@
                                     <styles
                                     fontName=".SF NS Text"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <children type="4017">
@@ -509,8 +507,6 @@
                                     <styles
                                     fontName=".SF NS Text"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <children type="4017">
@@ -545,8 +541,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="22"
-                                    xsi:type="notation:Bounds" y="58"/>
+                                    x="27"
+                                    xsi:type="notation:Bounds" y="21"/>
                                     </children>
 
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -572,7 +568,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="143"
+                                    height="147"
                                     width="381" xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -1813,6 +1809,10 @@
                                     </bwext:BWActivity>
                                     </tibex:config>
                                 </tibex:activityExtension>
+                            </bpws:extensionActivity>
+                            <bpws:extensionActivity>
+                                <tibex:activityExtension
+                                    inputVariable="Log1-input" name="Log1"/>
                             </bpws:extensionActivity>
                         </bpws:flow>
                     </bpws:scope>
