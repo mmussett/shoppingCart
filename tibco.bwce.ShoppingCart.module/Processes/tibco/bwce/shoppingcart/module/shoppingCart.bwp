@@ -500,6 +500,8 @@
                                     <styles
                                     fontName=".SF NS Text"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <children type="4017">
@@ -507,6 +509,8 @@
                                     <styles
                                     fontName=".SF NS Text"
                                     lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <children type="4017">
@@ -541,8 +545,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="27"
-                                    xsi:type="notation:Bounds" y="21"/>
+                                    x="-11"
+                                    xsi:type="notation:Bounds" y="9"/>
                                     </children>
 
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -1650,17 +1654,6 @@
             <bendpoints points="[12, 1, -91, 0]$[79, 0, -24, -1]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
         <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.1"/>
-            <bendpoints points="[25, -1, -221, 0]$[222, 0, -24, 1]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.1/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.1/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
             <children type="6002">
@@ -1692,6 +1685,17 @@
             <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.0/@messages.3/@activity/@activity/@links/@children.1"/>
             <bendpoints points="[25, -2, -212, 17]$[213, -17, -24, 2]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
+            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.0/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@links/@children.1"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
     <tibex:NamespaceRegistry enabled="true">
@@ -1728,9 +1732,9 @@
         <bpws:variable messageType="ns:patchResponse"
             name="patchOut-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:ActivityInput" name="Log-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns1:ActivityInput" name="Log1-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:ActivityInput" name="Log2-input" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:ActivityInput" name="Log3-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:ActivityInput" name="Log1-input" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1751,13 +1755,14 @@
                     <bpws:scope name="scope1">
                         <bpws:flow name="flow1">
                             <bpws:links>
-                                <bpws:link name="OnMessageStartToLog1" tibex:linkType="SUCCESS"/>
+                                <bpws:link
+                                    name="OnMessageStartTopostOut" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="Log1TopostOut" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart"
                                 tibex:constructor="onMessageStart" tibex:xpdlId="515ab64a-046c-4b7f-95d0-8f95087ffd91">
                                 <bpws:sources>
-                                    <bpws:source linkName="OnMessageStartToLog1"/>
+                                    <bpws:source linkName="OnMessageStartTopostOut"/>
                                 </bpws:sources>
                             </bpws:empty>
                             <bpws:empty name="OnMessageEnd"
@@ -1780,9 +1785,9 @@
                                 <tibex:activityExtension
                                     inputVariable="Log1-input"
                                     name="Log1"
-                                    tibex:xpdlId="874bc653-dcee-4f01-a8e6-b6b8c31acccf" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                    tibex:xpdlId="b21ee8b2-8589-4bf8-8c80-327a21e623e0" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="OnMessageStartToLog1"/>
+                                    <bpws:target linkName="OnMessageStartTopostOut"/>
                                     </bpws:targets>
                                     <bpws:sources>
                                     <bpws:source linkName="Log1TopostOut"/>
@@ -1809,10 +1814,6 @@
                                     </bwext:BWActivity>
                                     </tibex:config>
                                 </tibex:activityExtension>
-                            </bpws:extensionActivity>
-                            <bpws:extensionActivity>
-                                <tibex:activityExtension
-                                    inputVariable="Log1-input" name="Log1"/>
                             </bpws:extensionActivity>
                         </bpws:flow>
                     </bpws:scope>
