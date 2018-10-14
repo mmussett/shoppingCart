@@ -546,7 +546,7 @@
                                     height="40"
                                     width="40"
                                     x="13"
-                                    xsi:type="notation:Bounds" y="36"/>
+                                    xsi:type="notation:Bounds" y="18"/>
                                     </children>
 
                                     <styles xsi:type="notation:DrawerStyle"/>
@@ -572,7 +572,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="121"
+                                    height="122"
                                     width="381" xsi:type="notation:Bounds"/>
                                     </children>
 
