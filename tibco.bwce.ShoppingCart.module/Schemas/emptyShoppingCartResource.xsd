@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1539607386459" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1539607386459">
+  <complexType name="emptyShoppingCartElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="cart">
+        <complexType>
+          <sequence>
+            <element maxOccurs="unbounded" minOccurs="0" name="content" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="id" type="string"/>
+            <element maxOccurs="1" minOccurs="0" name="qty" type="integer"/>
+            <element maxOccurs="1" minOccurs="0" name="total" type="integer"/>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <element name="emptyShoppingCartElement" type="tns:emptyShoppingCartElementType"/>
+</schema>
