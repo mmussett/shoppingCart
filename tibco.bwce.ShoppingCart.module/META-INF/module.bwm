@@ -33,6 +33,8 @@
   <sca:property xmi:id="_AzsPwM3kEeiO86h7HiAGtA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_AzvTEM3kEeiO86h7HiAGtA" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
   <sca:property xmi:id="_AzyWYM3kEeiO86h7HiAGtA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_BtqNkNBpEei1u7LvrGfCfw" name="flogoLambdaHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_F5G6UNBpEei1u7LvrGfCfw" name="flogoLambdaPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_l5s5EM3kEeiO86h7HiAGtA" name="ComponentshoppingCart" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_l5s5Ec3kEeiO86h7HiAGtA" processName="tibco.bwce.shoppingcart.module.shoppingCart"/>
     <sca:service xmi:id="_l50N0M3kEeiO86h7HiAGtA" name="shoppingcart">
