@@ -801,17 +801,6 @@
                 </xsd:sequence>
             </xsd:complexType>
         </xsd:schema>
-        <schema elementFormDefault="unqualified"
-            targetNamespace="activity.jsonParser.input+66ff0de1-33ed-427a-a3fb-b61ab247d301+ActivityInputType"
-            xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="activity.jsonParser.input+66ff0de1-33ed-427a-a3fb-b61ab247d301+ActivityInputType">
-            <complexType name="ActivityInputClassType">
-                <sequence>
-                    <element maxOccurs="1" minOccurs="1"
-                        name="jsonString" type="string"/>
-                </sequence>
-            </complexType>
-            <element name="ActivityInputClass" type="tns:ActivityInputClassType"/>
-        </schema>
         <wsdl:definitions
             targetNamespace="http://xmlns.example.com/20181012080351PLT"
             xmlns:extns="http://tns.tibco.com/bw/json/1539327632537"
@@ -2233,62 +2222,6 @@
                                     xsi:type="notation:Bounds" y="30"/>
                                     </children>
 
-                                    <children type="4002 bw.restjson.JsonParser">
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <children type="4017">
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <layoutConstraint xsi:type="notation:Bounds"/>
-                                    </children>
-
-                                    <styles
-                                    fontName=".SF NS Text"
-                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
-
-                                    <styles
-                                    backgroundColor="16777215"
-                                    gradientEndColor="50431"
-                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
-
-                                    <element href="//0/@process/@activity/@activity/@activities.0/@messages.2/@activity/@activity/@activities.6"/>
-
-                                    <layoutConstraint
-                                    height="40"
-                                    width="40"
-                                    x="412"
-                                    xsi:type="notation:Bounds" y="30"/>
-                                    </children>
-
                                     <styles xsi:type="notation:DrawerStyle"/>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -2935,24 +2868,13 @@
         </edges>
         <edges
             source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.2/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
-            target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.2/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4" type="4006">
-            <children type="6002">
-                <layoutConstraint xsi:type="notation:Location" y="40"/>
-            </children>
-            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
-            <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.2/@activity/@activity/@links/@children.3"/>
-            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
-        </edges>
-        <edges
-            source="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.2/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.4"
             target="//@children.0/@children.4/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.2/@children.2/@children.1/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName=".SF NS Text" xsi:type="notation:FontStyle"/>
-            <element href="//0/@process/@activity/@activity/@activities.0/@messages.2/@activity/@activity/@links/@children.4"/>
+            <element href="//0/@process/@activity/@activity/@activities.0/@messages.2/@activity/@activity/@links/@children.3"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
@@ -2984,6 +2906,8 @@
             namespace="http://www.tibco.com/namespaces/tnt/plugins/restinvoke+4ad63919-507b-41fc-aef8-82b5c0485039+RestInvokeInput" prefix="tns11"/>
         <tibex:namespaceItem
             namespace="activity.jsonParser.input+66ff0de1-33ed-427a-a3fb-b61ab247d301+ActivityInputType" prefix="tns12"/>
+        <tibex:namespaceItem
+            namespace="http://tns.tibco.com/bw/json/1539617557886" prefix="tns13"/>
     </tibex:NamespaceRegistry>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/json/1539327632537"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
@@ -3059,13 +2983,6 @@
             name="_error_DeleteShoppingCart" sca-bpel:internal="true"/>
         <bpws:variable element="ns1:ActivityInput"
             name="LogDebugFlogoResponseBody3-input" sca-bpel:internal="true"/>
-        <bpws:variable element="ns19:ActivityInputClass"
-            name="ParseJSON-input" sca-bpel:internal="true"/>
-        <bpws:variable
-            element="ns20:flogoDeleteShoppingCartResponseElement"
-            name="ParseJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns10:ActivityErrorData"
-            name="_error_ParseJSON" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -3109,29 +3026,29 @@
                                 tibex:xpdlId="e00d9284-c657-49b6-9002-af1c9d816b38" variable="postOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20181012080351PLT&quot; xmlns:tns13=&quot;http://tns.tibco.com/bw/json/1539607386459&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1539327632537&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseCreateShoppingCartJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;postOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:shoppingCart>&#xa;            &lt;tns1:cart>&#xa;                &lt;xsl:if test=&quot;$ParseCreateShoppingCartJSON/tns13:cart/tns13:id&quot;>&#xa;                    &lt;tns1:id>&#xa;                        &lt;xsl:value-of select=&quot;$ParseCreateShoppingCartJSON/tns13:cart/tns13:id&quot;/>&#xa;                    &lt;/tns1:id>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$ParseCreateShoppingCartJSON/tns13:cart/tns13:qty&quot;>&#xa;                    &lt;tns1:qty>&#xa;                        &lt;xsl:value-of select=&quot;$ParseCreateShoppingCartJSON/tns13:cart/tns13:qty&quot;/>&#xa;                    &lt;/tns1:qty>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$ParseCreateShoppingCartJSON/tns13:cart/tns13:total&quot;>&#xa;                    &lt;tns1:total>&#xa;                        &lt;xsl:value-of select=&quot;$ParseCreateShoppingCartJSON/tns13:cart/tns13:total&quot;/>&#xa;                    &lt;/tns1:total>&#xa;                &lt;/xsl:if>&#xa;                &lt;tns1:content/>&#xa;            &lt;/tns1:cart>&#xa;        &lt;/tns1:shoppingCart>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20181012080351PLT&quot; xmlns:tns14=&quot;http://tns.tibco.com/bw/json/1539607386459&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1539327632537&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseCreateShoppingCartJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;postOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:shoppingCart>&#xa;            &lt;tns1:cart>&#xa;                &lt;xsl:if test=&quot;$ParseCreateShoppingCartJSON/tns14:cart/tns14:id&quot;>&#xa;                    &lt;tns1:id>&#xa;                        &lt;xsl:value-of select=&quot;$ParseCreateShoppingCartJSON/tns14:cart/tns14:id&quot;/>&#xa;                    &lt;/tns1:id>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$ParseCreateShoppingCartJSON/tns14:cart/tns14:qty&quot;>&#xa;                    &lt;tns1:qty>&#xa;                        &lt;xsl:value-of select=&quot;$ParseCreateShoppingCartJSON/tns14:cart/tns14:qty&quot;/>&#xa;                    &lt;/tns1:qty>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$ParseCreateShoppingCartJSON/tns14:cart/tns14:total&quot;>&#xa;                    &lt;tns1:total>&#xa;                        &lt;xsl:value-of select=&quot;$ParseCreateShoppingCartJSON/tns14:cart/tns14:total&quot;/>&#xa;                    &lt;/tns1:total>&#xa;                &lt;/xsl:if>&#xa;                &lt;tns1:content/>&#xa;            &lt;/tns1:cart>&#xa;        &lt;/tns1:shoppingCart>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20181012080351PLT" xmlns:tns13="http://tns.tibco.com/bw/json/1539607386459" xmlns:tns1="http://tns.tibco.com/bw/json/1539327632537" version="2.0"&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20181012080351PLT" xmlns:tns14="http://tns.tibco.com/bw/json/1539607386459" xmlns:tns1="http://tns.tibco.com/bw/json/1539327632537" version="2.0"&gt;
     &lt;xsl:param name="ParseCreateShoppingCartJSON"/&gt;
     &lt;xsl:template name="postOut-input" match="/"&gt;
         &lt;tns:postResponse&gt;
             &lt;item&gt;
                 &lt;tns1:shoppingCart&gt;
                     &lt;tns1:cart&gt;
-                        &lt;xsl:if test="$ParseCreateShoppingCartJSON/tns13:cart/tns13:id"&gt;
+                        &lt;xsl:if test="$ParseCreateShoppingCartJSON/tns14:cart/tns14:id"&gt;
                             &lt;tns1:id&gt;
-                                &lt;xsl:value-of select="$ParseCreateShoppingCartJSON/tns13:cart/tns13:id"/&gt;
+                                &lt;xsl:value-of select="$ParseCreateShoppingCartJSON/tns14:cart/tns14:id"/&gt;
                             &lt;/tns1:id&gt;
                         &lt;/xsl:if&gt;
-                        &lt;xsl:if test="$ParseCreateShoppingCartJSON/tns13:cart/tns13:qty"&gt;
+                        &lt;xsl:if test="$ParseCreateShoppingCartJSON/tns14:cart/tns14:qty"&gt;
                             &lt;tns1:qty&gt;
-                                &lt;xsl:value-of select="$ParseCreateShoppingCartJSON/tns13:cart/tns13:qty"/&gt;
+                                &lt;xsl:value-of select="$ParseCreateShoppingCartJSON/tns14:cart/tns14:qty"/&gt;
                             &lt;/tns1:qty&gt;
                         &lt;/xsl:if&gt;
-                        &lt;xsl:if test="$ParseCreateShoppingCartJSON/tns13:cart/tns13:total"&gt;
+                        &lt;xsl:if test="$ParseCreateShoppingCartJSON/tns14:cart/tns14:total"&gt;
                             &lt;tns1:total&gt;
-                                &lt;xsl:value-of select="$ParseCreateShoppingCartJSON/tns13:cart/tns13:total"/&gt;
+                                &lt;xsl:value-of select="$ParseCreateShoppingCartJSON/tns14:cart/tns14:total"/&gt;
                             &lt;/tns1:total&gt;
                         &lt;/xsl:if&gt;
                         &lt;tns1:content/&gt;
@@ -3320,52 +3237,52 @@
                                 tibex:xpdlId="403189d1-663c-4e99-8d81-2233462343b8" variable="getOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20181012080351PLT&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1539327632537&quot; xmlns:tns13=&quot;http://tns.tibco.com/bw/json/1539612875199&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseGetShoppingCartJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:shoppingCart>&#xa;            &lt;tns1:cart>&#xa;                &lt;xsl:if test=&quot;$ParseGetShoppingCartJSON/tns13:cart/tns13:id&quot;>&#xa;                    &lt;tns1:id>&#xa;                        &lt;xsl:value-of select=&quot;$ParseGetShoppingCartJSON/tns13:cart/tns13:id&quot;/>&#xa;                    &lt;/tns1:id>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$ParseGetShoppingCartJSON/tns13:cart/tns13:qty&quot;>&#xa;                    &lt;tns1:qty>&#xa;                        &lt;xsl:value-of select=&quot;$ParseGetShoppingCartJSON/tns13:cart/tns13:qty&quot;/>&#xa;                    &lt;/tns1:qty>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$ParseGetShoppingCartJSON/tns13:cart/tns13:total&quot;>&#xa;                    &lt;tns1:total>&#xa;                        &lt;xsl:value-of select=&quot;$ParseGetShoppingCartJSON/tns13:cart/tns13:total&quot;/>&#xa;                    &lt;/tns1:total>&#xa;                &lt;/xsl:if>&#xa;                &lt;tns1:content>&#xa;                    &lt;xsl:for-each select=&quot;$ParseGetShoppingCartJSON/tns13:cart/tns13:content&quot;>&#xa;                        &lt;tns1:cartItem>&#xa;                            &lt;xsl:if test=&quot;tns13:product_id&quot;>&#xa;                                &lt;tns1:product_id>&#xa;                                    &lt;xsl:value-of select=&quot;tns13:product_id&quot;/>&#xa;                                &lt;/tns1:product_id>&#xa;                            &lt;/xsl:if>&#xa;                            &lt;xsl:if test=&quot;tns13:unit_price&quot;>&#xa;                                &lt;tns1:unit_price>&#xa;                                    &lt;xsl:value-of select=&quot;tns13:unit_price&quot;/>&#xa;                                &lt;/tns1:unit_price>&#xa;                            &lt;/xsl:if>&#xa;                            &lt;xsl:if test=&quot;tns13:qty&quot;>&#xa;                                &lt;tns1:qty>&#xa;                                    &lt;xsl:value-of select=&quot;tns13:qty&quot;/>&#xa;                                &lt;/tns1:qty>&#xa;                            &lt;/xsl:if>&#xa;                            &lt;xsl:if test=&quot;tns13:line_price&quot;>&#xa;                                &lt;tns1:line_price>&#xa;                                    &lt;xsl:value-of select=&quot;tns13:line_price&quot;/>&#xa;                                &lt;/tns1:line_price>&#xa;                            &lt;/xsl:if>&#xa;                        &lt;/tns1:cartItem>&#xa;                    &lt;/xsl:for-each>&#xa;                &lt;/tns1:content>&#xa;            &lt;/tns1:cart>&#xa;        &lt;/tns1:shoppingCart>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20181012080351PLT&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1539327632537&quot; xmlns:tns14=&quot;http://tns.tibco.com/bw/json/1539612875199&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseGetShoppingCartJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;getOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns1:shoppingCart>&#xa;            &lt;tns1:cart>&#xa;                &lt;xsl:if test=&quot;$ParseGetShoppingCartJSON/tns14:cart/tns14:id&quot;>&#xa;                    &lt;tns1:id>&#xa;                        &lt;xsl:value-of select=&quot;$ParseGetShoppingCartJSON/tns14:cart/tns14:id&quot;/>&#xa;                    &lt;/tns1:id>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$ParseGetShoppingCartJSON/tns14:cart/tns14:qty&quot;>&#xa;                    &lt;tns1:qty>&#xa;                        &lt;xsl:value-of select=&quot;$ParseGetShoppingCartJSON/tns14:cart/tns14:qty&quot;/>&#xa;                    &lt;/tns1:qty>&#xa;                &lt;/xsl:if>&#xa;                &lt;xsl:if test=&quot;$ParseGetShoppingCartJSON/tns14:cart/tns14:total&quot;>&#xa;                    &lt;tns1:total>&#xa;                        &lt;xsl:value-of select=&quot;$ParseGetShoppingCartJSON/tns14:cart/tns14:total&quot;/>&#xa;                    &lt;/tns1:total>&#xa;                &lt;/xsl:if>&#xa;                &lt;tns1:content>&#xa;                    &lt;xsl:for-each select=&quot;$ParseGetShoppingCartJSON/tns14:cart/tns14:content&quot;>&#xa;                        &lt;tns1:cartItem>&#xa;                            &lt;xsl:if test=&quot;tns14:product_id&quot;>&#xa;                                &lt;tns1:product_id>&#xa;                                    &lt;xsl:value-of select=&quot;tns14:product_id&quot;/>&#xa;                                &lt;/tns1:product_id>&#xa;                            &lt;/xsl:if>&#xa;                            &lt;xsl:if test=&quot;tns14:unit_price&quot;>&#xa;                                &lt;tns1:unit_price>&#xa;                                    &lt;xsl:value-of select=&quot;tns14:unit_price&quot;/>&#xa;                                &lt;/tns1:unit_price>&#xa;                            &lt;/xsl:if>&#xa;                            &lt;xsl:if test=&quot;tns14:qty&quot;>&#xa;                                &lt;tns1:qty>&#xa;                                    &lt;xsl:value-of select=&quot;tns14:qty&quot;/>&#xa;                                &lt;/tns1:qty>&#xa;                            &lt;/xsl:if>&#xa;                            &lt;xsl:if test=&quot;tns14:line_price&quot;>&#xa;                                &lt;tns1:line_price>&#xa;                                    &lt;xsl:value-of select=&quot;tns14:line_price&quot;/>&#xa;                                &lt;/tns1:line_price>&#xa;                            &lt;/xsl:if>&#xa;                        &lt;/tns1:cartItem>&#xa;                    &lt;/xsl:for-each>&#xa;                &lt;/tns1:content>&#xa;            &lt;/tns1:cart>&#xa;        &lt;/tns1:shoppingCart>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20181012080351PLT" xmlns:tns1="http://tns.tibco.com/bw/json/1539327632537" xmlns:tns13="http://tns.tibco.com/bw/json/1539612875199" version="2.0"&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20181012080351PLT" xmlns:tns1="http://tns.tibco.com/bw/json/1539327632537" xmlns:tns14="http://tns.tibco.com/bw/json/1539612875199" version="2.0"&gt;
     &lt;xsl:param name="ParseGetShoppingCartJSON"/&gt;
     &lt;xsl:template name="getOut-input" match="/"&gt;
         &lt;tns:getResponse&gt;
             &lt;item&gt;
                 &lt;tns1:shoppingCart&gt;
                     &lt;tns1:cart&gt;
-                        &lt;xsl:if test="$ParseGetShoppingCartJSON/tns13:cart/tns13:id"&gt;
+                        &lt;xsl:if test="$ParseGetShoppingCartJSON/tns14:cart/tns14:id"&gt;
                             &lt;tns1:id&gt;
-                                &lt;xsl:value-of select="$ParseGetShoppingCartJSON/tns13:cart/tns13:id"/&gt;
+                                &lt;xsl:value-of select="$ParseGetShoppingCartJSON/tns14:cart/tns14:id"/&gt;
                             &lt;/tns1:id&gt;
                         &lt;/xsl:if&gt;
-                        &lt;xsl:if test="$ParseGetShoppingCartJSON/tns13:cart/tns13:qty"&gt;
+                        &lt;xsl:if test="$ParseGetShoppingCartJSON/tns14:cart/tns14:qty"&gt;
                             &lt;tns1:qty&gt;
-                                &lt;xsl:value-of select="$ParseGetShoppingCartJSON/tns13:cart/tns13:qty"/&gt;
+                                &lt;xsl:value-of select="$ParseGetShoppingCartJSON/tns14:cart/tns14:qty"/&gt;
                             &lt;/tns1:qty&gt;
                         &lt;/xsl:if&gt;
-                        &lt;xsl:if test="$ParseGetShoppingCartJSON/tns13:cart/tns13:total"&gt;
+                        &lt;xsl:if test="$ParseGetShoppingCartJSON/tns14:cart/tns14:total"&gt;
                             &lt;tns1:total&gt;
-                                &lt;xsl:value-of select="$ParseGetShoppingCartJSON/tns13:cart/tns13:total"/&gt;
+                                &lt;xsl:value-of select="$ParseGetShoppingCartJSON/tns14:cart/tns14:total"/&gt;
                             &lt;/tns1:total&gt;
                         &lt;/xsl:if&gt;
                         &lt;tns1:content&gt;
-                            &lt;xsl:for-each select="$ParseGetShoppingCartJSON/tns13:cart/tns13:content"&gt;
+                            &lt;xsl:for-each select="$ParseGetShoppingCartJSON/tns14:cart/tns14:content"&gt;
                                 &lt;tns1:cartItem&gt;
-                                    &lt;xsl:if test="tns13:product_id"&gt;
+                                    &lt;xsl:if test="tns14:product_id"&gt;
                                         &lt;tns1:product_id&gt;
-                                            &lt;xsl:value-of select="tns13:product_id"/&gt;
+                                            &lt;xsl:value-of select="tns14:product_id"/&gt;
                                         &lt;/tns1:product_id&gt;
                                     &lt;/xsl:if&gt;
-                                    &lt;xsl:if test="tns13:unit_price"&gt;
+                                    &lt;xsl:if test="tns14:unit_price"&gt;
                                         &lt;tns1:unit_price&gt;
-                                            &lt;xsl:value-of select="tns13:unit_price"/&gt;
+                                            &lt;xsl:value-of select="tns14:unit_price"/&gt;
                                         &lt;/tns1:unit_price&gt;
                                     &lt;/xsl:if&gt;
-                                    &lt;xsl:if test="tns13:qty"&gt;
+                                    &lt;xsl:if test="tns14:qty"&gt;
                                         &lt;tns1:qty&gt;
-                                            &lt;xsl:value-of select="tns13:qty"/&gt;
+                                            &lt;xsl:value-of select="tns14:qty"/&gt;
                                         &lt;/tns1:qty&gt;
                                     &lt;/xsl:if&gt;
-                                    &lt;xsl:if test="tns13:line_price"&gt;
+                                    &lt;xsl:if test="tns14:line_price"&gt;
                                         &lt;tns1:line_price&gt;
-                                            &lt;xsl:value-of select="tns13:line_price"/&gt;
+                                            &lt;xsl:value-of select="tns14:line_price"/&gt;
                                         &lt;/tns1:line_price&gt;
                                     &lt;/xsl:if&gt;
                                 &lt;/tns1:cartItem&gt;
@@ -3540,8 +3457,8 @@
                                 <bpws:link name="Log2TodeleteOut" tibex:linkType="SUCCESS"/>
                                 <bpws:link
                                     name="InvokeRESTAPITodeleteOut" tibex:linkType="SUCCESS"/>
-                                <bpws:link name="Log4TodeleteOut" tibex:linkType="SUCCESS"/>
-                                <bpws:link name="ParseJSONTodeleteOut" tibex:linkType="SUCCESS"/>
+                                <bpws:link
+                                    name="LogDebugFlogoResponseBody3TodeleteOut" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="OnMessageStart2"
                                 tibex:constructor="onMessageStart" tibex:xpdlId="c2a37f5f-63c0-4348-ae28-bf08fea0732c">
@@ -3558,12 +3475,12 @@
                                 tibex:xpdlId="8dcf2bb8-e828-41e3-b363-3b6e8a5de6c0" variable="deleteOut-input">
                                 <tibex:inputBindings>
                                     <tibex:partBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20181012080351PLT&quot; xmlns:tns1=&quot;http://tns.tibco.com/bw/json/1539617557886&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;ParseJSON&quot;/>&#xa;    &lt;xsl:template name=&quot;deleteOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;msg>&#xa;            &lt;xsl:value-of select=&quot;$ParseJSON/tns1:status&quot;/>&#xa;        &lt;/msg>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://xmlns.example.com/20181012080351PLT&quot; xmlns:tns13=&quot;http://tns.tibco.com/bw/json/1539617557886&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:template name=&quot;deleteOut-input&quot; match=&quot;/&quot;>&#xa;        &lt;msg>&#xa;            &lt;xsl:value-of select=&quot;''&quot;/>&#xa;        &lt;/msg>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                                 </tibex:inputBindings>
                                 <tibex:inputBinding expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20181012080351PLT" xmlns:tns1="http://tns.tibco.com/bw/json/1539617557886" version="2.0"&gt;&lt;xsl:param name="ParseJSON"/&gt;&lt;xsl:template name="deleteOut-input" match="/"&gt;&lt;tns:deleteResponse&gt;&lt;msg&gt;&lt;xsl:value-of select="$ParseJSON/tns1:status"/&gt;&lt;/msg&gt;&lt;/tns:deleteResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:tns="http://xmlns.example.com/20181012080351PLT" xmlns:tns13="http://tns.tibco.com/bw/json/1539617557886" version="2.0"&gt;&lt;xsl:template name="deleteOut-input" match="/"&gt;&lt;tns:deleteResponse&gt;&lt;msg&gt;&lt;xsl:value-of select="''"/&gt;&lt;/msg&gt;&lt;/tns:deleteResponse&gt;&lt;/xsl:template&gt;&lt;/xsl:stylesheet&gt;</tibex:inputBinding>
                                 <bpws:targets>
-                                    <bpws:target linkName="ParseJSONTodeleteOut"/>
+                                    <bpws:target linkName="LogDebugFlogoResponseBody3TodeleteOut"/>
                                 </bpws:targets>
                             </bpws:reply>
                             <bpws:extensionActivity>
@@ -3650,7 +3567,7 @@
                                     <bpws:target linkName="InvokeRESTAPITodeleteOut"/>
                                     </bpws:targets>
                                     <bpws:sources>
-                                    <bpws:source linkName="Log4TodeleteOut"/>
+                                    <bpws:source linkName="LogDebugFlogoResponseBody3TodeleteOut"/>
                                     </bpws:sources>
                                     <tibex:inputBindings>
                                     <tibex:inputBinding
@@ -3669,44 +3586,6 @@
                                     <type href="http://ns.tibco.com/bw/palette/generalactivities#//Log"/>
                                     <value role="Debug"
                                     suppressJobInfo="true" xsi:type="generalactivities:Log"/>
-                                    </properties>
-                                    </activityConfig>
-                                    </bwext:BWActivity>
-                                    </tibex:config>
-                                </tibex:activityExtension>
-                            </bpws:extensionActivity>
-                            <bpws:extensionActivity>
-                                <tibex:activityExtension
-                                    inputVariable="ParseJSON-input"
-                                    name="ParseJSON"
-                                    outputVariable="ParseJSON"
-                                    tibex:xpdlId="66ff0de1-33ed-427a-a3fb-b61ab247d301" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
-                                    <bpws:targets>
-                                    <bpws:target linkName="Log4TodeleteOut"/>
-                                    </bpws:targets>
-                                    <bpws:sources>
-                                    <bpws:source linkName="ParseJSONTodeleteOut"/>
-                                    </bpws:sources>
-                                    <tibex:inputBindings>
-                                    <tibex:inputBinding
-                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns12=&quot;activity.jsonParser.input+66ff0de1-33ed-427a-a3fb-b61ab247d301+ActivityInputType&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;DeleteShoppingCart&quot;/>&lt;xsl:template name=&quot;ParseJSON-input&quot; match=&quot;/&quot;>&lt;tns12:ActivityInputClass>&lt;jsonString>&lt;xsl:value-of select=&quot;$DeleteShoppingCart/MessageBody/asciiContent&quot;/>&lt;/jsonString>&lt;/tns12:ActivityInputClass>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
-                                    </tibex:inputBindings>
-                                    <tibex:config>
-                                    <bwext:BWActivity
-                                    activityTypeID="bw.restjson.JsonParser"
-                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
-                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
-                                    xmlns:restjson="http://ns.tibco.com/bw/palette/restjson" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-                                    <activityConfig>
-                                    <properties
-                                    name="config" xsi:type="activityconfig:EMFProperty">
-                                    <type href="http://ns.tibco.com/bw/palette/restjson#//JsonParser"/>
-                                    <value
-                                    jsonInputStyle="None"
-                                    schemaType="Xsd" xsi:type="restjson:JsonParser">
-
-                                    <outputEditorElement href="platform:/resource/tibco.bwce.ShoppingCart.module/Schemas/flogoDeleteShoppingCartResponseResource.xsd#//flogoDeleteShoppingCartResponseElement;XSDElementDeclaration"/>
-                                    </value>
                                     </properties>
                                     </activityConfig>
                                     </bwext:BWActivity>
