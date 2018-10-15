@@ -161,7 +161,11 @@
       "type" : "object",
       "properties" : {
         "cartItem" : {
-          "$ref" : "#/definitions/cartItem"
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/cartItem",
+            "uniqueItems" : false
+          }
         }
       }
     }
