@@ -59,7 +59,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.ShoppingCart.module//flogoLambdaHost</name>
-			<value>172.17.0.1</value>
+			<value>#flogoHost#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -67,11 +67,11 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//tibco.bwce.ShoppingCart.module//flogoLambdaPort</name>
-			<value>18082</value>
+			<value>#flogoPort#</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 	</globalVariables>
 </repository>
