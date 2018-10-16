@@ -81,20 +81,39 @@
             }
           }
         }
-      },
+      }
+    },
+    "/shoppingcart/{id}/do" : {
       "patch" : {
         "summary" : "",
         "description" : "",
-        "operationId" : "patch-shoppingcart",
+        "operationId" : "patch-shoppingcart-doactionproduct_idqty",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],
         "parameters" : [ {
           "name" : "body",
           "in" : "body",
           "description" : "",
-          "schema" : {
-            "$ref" : "#/definitions/shoppingCart"
-          },
+          "type" : "string",
+          "required" : true
+        }, {
+          "name" : "product_id",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        }, {
+          "name" : "qty",
+          "in" : "query",
+          "description" : "",
+          "type" : "integer",
+          "format" : "int32",
+          "required" : false
+        }, {
+          "name" : "action",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
           "required" : true
         }, {
           "name" : "id",

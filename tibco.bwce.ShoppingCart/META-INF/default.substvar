@@ -73,5 +73,37 @@
 			<type>Integer</type>
 			<isOverride>false</isOverride>
 		</globalVariable>
+		<globalVariable>
+			<name>//tibco.bwce.ShoppingCart.module//FLOGO_SHOPPING_CART_PORT</name>
+			<value>18082</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//tibco.bwce.ShoppingCart.module//FLOGO_PRODUCT_CATALOG_HOST</name>
+			<value>localhost</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//tibco.bwce.ShoppingCart.module//FLOGO_PRODUCT_CATALOG_PORT</name>
+			<value>18083</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//tibco.bwce.ShoppingCart.module//FLOGO_SHOPPING_CART_HOST</name>
+			<value>localhost</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
 	</globalVariables>
 </repository>

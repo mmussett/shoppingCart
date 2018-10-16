@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tns.tibco.com/bw/json/1539685102216" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/json/1539685102216">
+  <complexType name="flogoRemoveProductFromCartRequestElementType">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="cart_id" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="product_id" type="string"/>
+    </sequence>
+  </complexType>
+  <element name="flogoRemoveProductFromCartRequestElement" type="tns:flogoRemoveProductFromCartRequestElementType"/>
+</schema>
