@@ -3167,7 +3167,7 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="473"
+                                    x="511"
                                     xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
@@ -3279,7 +3279,7 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="588"
+                                    x="613"
                                     xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
@@ -3615,7 +3615,7 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="371"
+                                    x="414"
                                     xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
@@ -3671,7 +3671,7 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="278"
+                                    x="334"
                                     xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
@@ -3727,7 +3727,7 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="193"
+                                    x="212"
                                     xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
@@ -3808,7 +3808,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.3/@activity/@activity"/>
 
                                     <layoutConstraint
-                                    height="201"
+                                    height="204"
                                     width="960" xsi:type="notation:Bounds"/>
                                     </children>
 
@@ -4464,7 +4464,8 @@
             name="GetProductParseJSON" sca-bpel:internal="true"/>
         <bpws:variable element="ns10:ActivityErrorData"
             name="_error_GetProductParseJSON" sca-bpel:internal="true"/>
-        <bpws:variable element="ns1:ActivityInput" name="Log6-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns1:ActivityInput"
+            name="LogGetProductResponse-input" sca-bpel:internal="true"/>
         <bpws:variable
             element="ns38:flogoRemoveProductFromCartRequestElement"
             name="RenderJSON1-input" sca-bpel:internal="true"/>
@@ -5648,8 +5649,8 @@
                             </bpws:extensionActivity>
                             <bpws:extensionActivity>
                                 <tibex:activityExtension
-                                    inputVariable="Log6-input"
-                                    name="Log6"
+                                    inputVariable="LogGetProductResponse-input"
+                                    name="LogGetProductResponse"
                                     tibex:xpdlId="35c1ceed-d2d7-46d4-9924-48a147606504" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
                                     <bpws:target linkName="InvokeRESTAPIToPutProductInCart"/>
