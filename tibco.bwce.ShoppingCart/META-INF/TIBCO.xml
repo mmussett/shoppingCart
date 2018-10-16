@@ -52,20 +52,6 @@
       <packaging:overrideValue>false</packaging:overrideValue>
     </packaging:property>
     <packaging:property>
-      <packaging:name>//tibco.bwce.ShoppingCart.module//flogoLambdaHost</packaging:name>
-      <packaging:type>xsd:string</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
-      <packaging:name>//tibco.bwce.ShoppingCart.module//flogoLambdaPort</packaging:name>
-      <packaging:type>xsd:int</packaging:type>
-      <packaging:visibility>public</packaging:visibility>
-      <packaging:scalable>true</packaging:scalable>
-      <packaging:overrideValue>false</packaging:overrideValue>
-    </packaging:property>
-    <packaging:property>
       <packaging:name>//tibco.bwce.ShoppingCart.module//FLOGO_SHOPPING_CART_PORT</packaging:name>
       <packaging:type>xsd:int</packaging:type>
       <packaging:visibility>public</packaging:visibility>

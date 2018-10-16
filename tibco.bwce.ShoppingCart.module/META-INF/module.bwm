@@ -48,8 +48,6 @@
   <sca:property xmi:id="_AzsPwM3kEeiO86h7HiAGtA" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_AzvTEM3kEeiO86h7HiAGtA" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
   <sca:property xmi:id="_AzyWYM3kEeiO86h7HiAGtA" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
-  <sca:property xmi:id="_BtqNkNBpEei1u7LvrGfCfw" name="flogoLambdaHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
-  <sca:property xmi:id="_F5G6UNBpEei1u7LvrGfCfw" name="flogoLambdaPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_Gap7YNEdEeiY2s5R1cwxfw" name="FLOGO_SHOPPING_CART_HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_HoeZYNEdEeiY2s5R1cwxfw" name="FLOGO_SHOPPING_CART_PORT" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_K8crkNEdEeiY2s5R1cwxfw" name="FLOGO_PRODUCT_CATALOG_HOST" type="XMLSchema:string" publicAccess="true" scalable="true"/>

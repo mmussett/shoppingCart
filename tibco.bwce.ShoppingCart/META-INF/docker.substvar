@@ -58,22 +58,6 @@
 			<isOverride>false</isOverride>
 		</globalVariable>
 		<globalVariable>
-			<name>//tibco.bwce.ShoppingCart.module//flogoLambdaHost</name>
-			<value>#flogoHost#</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>String</type>
-			<isOverride>true</isOverride>
-		</globalVariable>
-		<globalVariable>
-			<name>//tibco.bwce.ShoppingCart.module//flogoLambdaPort</name>
-			<value>#flogoPort#</value>
-			<deploymentSettable>false</deploymentSettable>
-			<serviceSettable>false</serviceSettable>
-			<type>Integer</type>
-			<isOverride>true</isOverride>
-		</globalVariable>
-		<globalVariable>
 			<name>//tibco.bwce.ShoppingCart.module//FLOGO_SHOPPING_CART_PORT</name>
 			<value>#FLOGO_SHOPPING_CART_PORT#</value>
 			<deploymentSettable>false</deploymentSettable>
