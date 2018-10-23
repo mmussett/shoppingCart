@@ -1782,8 +1782,8 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="15"
-                                    xsi:type="notation:Bounds" y="10"/>
+                                    x="27"
+                                    xsi:type="notation:Bounds" y="38"/>
                                     </children>
 
                                     <children type="4002 bw.generalactivities.log">
@@ -1978,7 +1978,7 @@
 
                                     <layoutConstraint
                                     height="148"
-                                    width="700" xsi:type="notation:Bounds"/>
+                                    width="960" xsi:type="notation:Bounds"/>
                                     </children>
 
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -3055,7 +3055,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.3/@activity/@activity/@activities.2"/>
 
                                     <layoutConstraint
-                                    x="809"
+                                    x="823"
                                     xsi:type="notation:Bounds" y="15"/>
                                     </children>
 
